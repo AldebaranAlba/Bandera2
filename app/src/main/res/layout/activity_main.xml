@@ -7,44 +7,116 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
-    <View
-        android:id="@+id/estela1"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint1"
         android:layout_width="150dp"
         android:layout_height="match_parent"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintVertical_bias="0"
+        android:background="#000000"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/estela2"
+        app:layout_constraintEnd_toStartOf="@+id/constraint2"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="#000000"/>
+        >
 
-    <View
-        android:id="@+id/estela2"
+        <View
+            android:id="@+id/franja1_1"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f91d06"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <View
+            android:id="@+id/franja1_2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f91d06"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/franja1_1"
+            app:layout_constraintVertical_bias="0.019" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint2"
         android:layout_width="150dp"
         android:layout_height="match_parent"
-        app:layout_constraintHorizontal_bias=".5"
-        app:layout_constraintVertical_bias="0"
-        app:layout_constraintTop_toTopOf="parent"
+        android:background="#f91d06"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/estela1"
-        app:layout_constraintEnd_toStartOf="@+id/estela3"
+        app:layout_constraintEnd_toStartOf="@+id/constraint3"
+        app:layout_constraintStart_toEndOf="@+id/constraint1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
-        android:background="#f91d06"/>
+        <View
+            android:id="@+id/franja2_1"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#FFC300"
+            app:layout_constraintBottom_toTopOf="@+id/franja2_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.957" />
 
-    <View
-        android:id="@+id/estela3"
+        <View
+            android:id="@+id/franja2_2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginBottom="336dp"
+            android:background="#FFC300"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf=""
+            app:layout_constraintVertical_bias="0.48" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint3"
         android:layout_width="150dp"
         android:layout_height="match_parent"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintVertical_bias="0"
+        android:background="#FFC300"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/estela2"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="#FFC300"/>
+        app:layout_constraintStart_toEndOf="@+id/constraint2"
+        >
 
+        <View
+            android:id="@+id/franja3_1"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.945" />
 
+        <View
+            android:id="@+id/franja3_2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/franja3_1"
+            app:layout_constraintVertical_bias="0.448" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
